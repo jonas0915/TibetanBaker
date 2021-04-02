@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: rgb(51, 51, 51);
+  justify-content: space-between;
+  z-index: 1;
+  padding: 0 13rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+  font-family: "Roboto", sans-serif;
+}
+
+#navbar ul li a:hover {
+  background: rgb(114, 101, 101);
+  border-radius: 5px;
+}
+
+/* Showcase */
+#showcase {
+  background: #333 url("../images/cheesecake1.png") no-repeat center
+    center/cover;
+  margin: 60px 80px 80px;
+  border: 100px;
+  height: 520px;
+  width: auto;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+
+  /* Overlay */
+  position: absolute;
+  top: 13px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(24, 21, 21, 0.4);
+}
+
+.l-heading {
+  font-size: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+  font-family: "Italianno", cursive;
+}
+
+#calories {
+  font-size: 3rem;
+  font-family: "Italianno", cursive;
+  color: pink;
+}
+
+.logo {
+  font-family: "Italianno", cursive;
+  font-size: 4rem;
+  color: pink;
+}
+
+#about {
+  font-size: 80px;
+  /* margin-top: 10px; */
+}
+
+#middle {
+  text-align: center;
+  margin: 3rem;
+  font-family: "Italianno", cursive;
+  padding-top: 50px;
+  color: pink;
+  position: relative;
+}
+
+.carousel-inner .img {
+  margin: auto;
+}
+
+.slide-show {
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 28%;
+}
+
+.footer-container {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding-top: 0.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.fab {
+  color: #fff;
+
+  font-size: 35px;
+  margin: 0.5rem;
+}
+
+.fab:hover {
+  color: pink;
+}
+
+.orders {
+  background: #333;
+  margin-bottom: 20px;
+}
+
+.orders p {
+  font-size: 30px;
+}
