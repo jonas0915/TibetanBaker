@@ -1,0 +1,40 @@
+@media (max-width: 600px) {
+  #navbar {
+    width: auto;
+    padding: 1rem 1rem;
+
+    justify-content: space-around;
+  }
+  #showcase {
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #showcase .showcase-content {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 500px;
+    background-color: rgba(24, 21, 21, 0.4);
+  }
+  .logo {
+    font-family: "Italianno", cursive;
+    font-size: 2rem;
+    color: pink;
+  }
+  #navbar ul {
+    /* display: flex; */
+    /* align-items: center; */
+    list-style: none;
+  }
+  #middle {
+    text-align: center;
+    justify-content: center;
+  }
+}
