@@ -6,8 +6,12 @@
     justify-content: space-around;
   }
   #showcase {
+    background: #333 url("../images/cheesecake1.png") no-repeat center/ cover;
+    width: 500px;
+    height: 600px;
+    padding: 0;
     display: flex;
-    position: static;
+    padding-left: 60px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -39,5 +43,11 @@
   }
   .footer-container {
     width: 600px;
+  }
+  .carousel-inner {
+    width: 350px;
+  }
+  .orders {
+    width: 350px;
   }
 }
