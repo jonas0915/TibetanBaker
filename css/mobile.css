@@ -1,17 +1,18 @@
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   #navbar {
-    width: 600px;
+    width: 500px;
     padding: 1rem 1rem;
-
+    float: none;
+    align-items: center;
     justify-content: space-around;
   }
   #showcase {
     background: #333 url("../images/cheesecake1.png") no-repeat center/ cover;
-    width: 500px;
-    height: 500px;
-    padding: 0;
+    width: 400px;
+    height: 400px;
+
     display: flex;
-    padding-left: 60px;
+    padding-left: 0 60px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -24,8 +25,8 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 600px;
-    height: 700px;
+    width: 500px;
+    height: 600px;
     background-color: rgba(24, 21, 21, 0.4);
   }
   .logo {
@@ -34,21 +35,30 @@
     color: pink;
   }
   #navbar ul {
-    /* display: flex; */
-    /* align-items: center; */
+    display: flex;
+    align-items: center;
     list-style: none;
   }
-  #middle {
+
+  #about {
+    margin: 5px;
     text-align: center;
-    justify-content: center;
+    /* padding-left: 0%; */
   }
-  .footer-container {
-    width: 600px;
+
+  #carouselExampleControls {
+    margin: 5px;
+    width: 300px;
+    padding-left: -30px;
   }
-  .carousel-inner {
-    width: 350px;
-  }
+
   .orders {
-    width: 350px;
+    width: 300px;
+
+    margin: 5px;
+  }
+
+  .footer-container {
+    width: 500px;
   }
 }
