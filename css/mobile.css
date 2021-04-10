@@ -1,64 +1,66 @@
-@media (max-width: 500px) {
-  #navbar {
-    width: 500px;
-    padding: 1rem 1rem;
-    float: none;
-    align-items: center;
-    justify-content: space-around;
-  }
-  #showcase {
-    background: #333 url("../images/cheesecake1.png") no-repeat center/ cover;
-    width: 400px;
-    height: 400px;
+#navbar {
+  width: 500px;
+  height: 50px;
+  padding: 2rem 1rem 1rem;
+  float: none;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
 
-    display: flex;
-    padding-left: 0 60px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  #showcase .showcase-content {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 500px;
-    height: 600px;
-    background-color: rgba(24, 21, 21, 0.4);
-  }
-  .logo {
-    font-family: "Italianno", cursive;
-    font-size: 2rem;
-    color: pink;
-  }
-  #navbar ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-  }
+#showcase {
+  background: #333 url("../images/cheesecake1.png") no-repeat center/ cover;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  padding-left: 0 60px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#showcase .showcase-content {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 500px;
+  height: 550px;
+  background-color: rgba(24, 21, 21, 0.4);
+}
+.logo {
+  font-family: "Italianno", cursive;
+  font-size: 2rem;
+  color: pink;
+}
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
 
-  #about {
-    margin: 5px;
-    text-align: center;
-    /* padding-left: 0%; */
-  }
+#about {
+  margin: 5px;
+  text-align: center;
+  /* padding-left: 0%; */
+}
 
-  #carouselExampleControls {
-    margin: 5px;
-    width: 300px;
-    padding-left: -30px;
-  }
+#carouselExampleControls {
+  display: grid;
+  margin: 5px;
+  width: 300px;
+  padding-left: -30px;
+}
 
-  .orders {
-    width: 300px;
+.orders {
+  width: 300px;
+  margin: 5px;
+}
 
-    margin: 5px;
-  }
-
-  .footer-container {
-    width: 500px;
-  }
+.footer-container {
+  width: 500px;
+  height: 110px;
+  padding-bottom: 5px;
 }
