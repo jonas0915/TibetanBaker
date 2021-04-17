@@ -11,49 +11,23 @@
     text-align: center;
     justify-content: center;
     padding: 20px;
-    z-index: 15;
   }
   .navbar {
-    position: static;
+    position: relative;
     flex-direction: column;
     height: 100px;
     align-items: center;
     text-align: center;
     justify-content: center;
     padding: 20px 30px;
-    z-index: 15;
   }
 
-  #showcase {
-    display: block;
-  }
-  */ #about {
-    font-size: 50px;
-  }
-
-  @media (max-width: 768px) {
-    .accent-nav {
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    .navbar {
-      flex-direction: column;
-      height: 100px;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      padding: 20px 30px;
-    }
-
-    .navbar a {
-      padding: 0 10px;
-      margin: 0 3px;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-    }
+  .navbar a {
+    padding: 0 10px;
+    margin: 0 3px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
   #showcase {
