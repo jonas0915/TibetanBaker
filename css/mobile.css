@@ -8,6 +8,7 @@
 
 @media (max-width: 768px) {
   .accent-nav {
+    margin-top: 20px;
     align-items: center;
     text-align: center;
     justify-content: center;
