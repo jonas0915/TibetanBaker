@@ -1,66 +1,31 @@
-#navbar {
-  width: 500px;
-  height: 50px;
-  padding: 2rem 1rem 1rem;
-  float: none;
-  align-items: center;
-  justify-content: space-around;
-  display: flex;
-}
-
 #showcase {
-  background: #333 url("../images/cheesecake1.png") no-repeat center/ cover;
-  width: 400px;
-  height: 400px;
-  display: flex;
-  padding-left: 0 60px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  display: block;
 }
-#showcase .showcase-content {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 500px;
-  height: 550px;
-  background-color: rgba(24, 21, 21, 0.4);
-}
-.logo {
-  font-family: "Italianno", cursive;
-  font-size: 2rem;
-  color: pink;
-}
-#navbar ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
+*/ #about {
+  font-size: 50px;
 }
 
-#about {
-  margin: 5px;
-  text-align: center;
-  /* padding-left: 0%; */
-}
+@media (max-width: 768px) {
+  .accent-nav {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .navbar {
+    flex-direction: column;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 30px;
+  }
 
-#carouselExampleControls {
-  display: grid;
-  margin: 5px;
-  width: 300px;
-  padding-left: -30px;
-}
-
-.orders {
-  width: 300px;
-  margin: 5px;
-}
-
-.footer-container {
-  width: 500px;
-  height: 110px;
-  padding-bottom: 5px;
+  .navbar a {
+    padding: 0 10px;
+    margin: 0 3px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
 }

@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 * {
-  max-width: 1500px;
   box-sizing: border-box;
   align-items: center;
-  /* text-align: center; */
   margin: 0;
   padding: 0;
 }
@@ -18,140 +16,204 @@ ul {
   list-style: none;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 p {
   margin: 0.75rem 0;
 }
 
-#navbar {
-  display: flex;
-  position: sticky;
-  top: 0;
-  background: rgb(51, 51, 51);
-  justify-content: space-between;
-  z-index: 1;
-  padding: 0 13rem;
+h1,
+h2,
+h3 {
+  line-height: 1.2rem;
+  font-weight: 300;
 }
 
-#navbar ul {
-  display: flex;
+.container {
+  margin: auto;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.accent-nav {
+  color: pink;
+  font-family: "Italianno", cursive;
+  font-size: 65px;
+}
+.accent-nav {
+  text-align: center;
   align-items: center;
-  list-style: none;
+  padding-top: 5px;
 }
 
-#navbar ul li a {
+.accent {
+  color: pink;
+  font-family: "Italianno", cursive;
+  font-size: 70px;
+  z-index: 10;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  background: #333;
   color: #fff;
-  padding: 0.75rem;
-  margin: 0 0.25rem;
-  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  z-index: 1;
+  padding: 0 30px;
 }
 
-#navbar ul li a:hover {
-  background: rgb(114, 101, 101);
-  border-radius: 5px;
+.navbar ul {
+  display: flex;
 }
 
-/* Showcase */
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: pink 2px solid;
+}
+
+.navbar ul {
+  display: flex;
+}
+
 #showcase {
-  background: #333 url("../images/cheesecake1.png") no-repeat center
-    center/cover;
-  margin: 60px;
-  padding: 100px;
-  border: 100px;
-  height: 520px;
-  width: auto;
+  background: url("../images/cheesecake1.png") no-repeat center center/cover;
+  height: 87.5vh;
+  position: relative;
   color: #fff;
 }
 
 #showcase .showcase-content {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   height: 100%;
-  padding: 0 2rem;
+  padding: 20px;
+}
 
-  /* Overlay */
+#showcase .showcase-content h1 {
+  font-size: 85px;
+}
+
+#showcase .showcase-content p {
+  font-size: 50px;
+  max-width: 600px;
+  color: pink;
+  font-family: "Italianno", cursive;
+  margin: 20px 0 30px;
+  z-index: 15;
+}
+
+.showcase-overlay::before {
+  content: "";
   position: absolute;
-  top: 13px;
+  top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(24, 21, 21, 0.4);
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
 }
 
-.l-heading {
-  font-size: 6rem;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.1;
-  font-family: "Italianno", cursive;
+#showcase::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-#calories {
-  font-size: 3rem;
-  font-family: "Italianno", cursive;
-  color: pink;
+.showcase * {
+  z-index: 10;
 }
 
-.logo {
-  font-family: "Italianno", cursive;
-  font-size: 4rem;
-  color: pink;
-  display: inherit;
+#showcase-overlay * {
+  z-index: 0;
 }
 
-#about {
-  font-size: 80px;
-}
+/* About  */
 
 #middle {
-  text-align: center;
-  font-family: "Italianno", cursive;
-  padding-top: 50px;
-  color: pink;
   position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 90px;
 }
 
 .slide-show {
-  margin-bottom: 30px;
   align-items: center;
   justify-content: center;
-  padding: 0 28%;
-}
-
-.footer-container {
-  background-color: #333;
-  color: #fff;
   text-align: center;
-  padding-top: 2.5px;
-  font-family: "Times New Roman", Times, serif;
+  padding: auto;
+  margin: auto;
 }
 
-.fab {
-  color: #fff;
-  font-size: 35px;
-  margin: 0.5rem;
+.carousel-item .img-fluid {
+  width: 100%;
+  height: 100%;
 }
 
-.fab:hover {
-  color: pink;
+.carousel-item img {
+  width: 50px;
 }
 
 .orders {
-  background: #333;
-  margin-bottom: 20px;
-}
-
-.orders p {
+  position: relative;
+  align-items: center;
   font-size: 30px;
+  font-family: "Italianno", cursive;
+  color: pink;
+  background-color: #333;
+  padding-top: 8px;
 }
 
-#email {
-  /* color: #fff; */
+#main-footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+}
+
+#contact p {
   font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#contact a {
+  font-size: 22px;
+}
+
+.fab {
+  font-size: 30px;
+  padding: 2px 5px;
+  color: pink;
+}
+
+.fab:hover {
+  color: #fff;
+}
+
+.footer-container {
+  padding: 3px;
 }
