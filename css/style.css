@@ -204,6 +204,10 @@ h3 {
   font-size: 22px;
 }
 
+#contact a:hover {
+  color: pink;
+}
+
 .fab {
   font-size: 30px;
   padding: 2px 5px;
