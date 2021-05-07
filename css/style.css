@@ -151,7 +151,54 @@ h3 {
 }
 
 /* About  */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  box-shadow: black 2px;
+  align-items: center;
+}
 
+.grid .item {
+  border: 1px #ccc solid;
+  padding: 1.5rem;
+  height: 400px;
+  align-items: center;
+  text-align: center;
+}
+
+.grid .item p {
+  padding-top: 30px;
+  font-family: "Noto Serif JP", serif;
+  color: pink;
+  background: #333;
+  height: 100px;
+  align-items: center;
+  text-align: center;
+}
+
+.cake-img {
+  width: 280px;
+  height: 250px;
+}
+
+.cake-img:hover {
+  opacity: 1;
+  transform: translateY(50%);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.bio-content {
+  font-family: "Noto Serif JP", serif;
+  color: pink;
+  background: #333;
+  font-size: 20px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Carousel */
 #middle {
   position: relative;
   align-items: center;
@@ -194,6 +241,13 @@ h3 {
   align-items: center;
 }
 
+#main-footer2 {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+}
+
 #contact p {
   font-size: 22px;
   font-family: "Times New Roman", Times, serif;
@@ -219,4 +273,102 @@ h3 {
 
 .footer-container {
   padding: 3px;
+}
+
+/* Basque */
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  align-items: center;
+  text-align: center;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #333;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  width: 50px;
+  height: 80px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.cake-images {
+  height: 500px;
+  width: 500px;
+  align-items: center;
 }
