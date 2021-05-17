@@ -198,6 +198,37 @@ h3 {
   padding: 20px;
 }
 
+/* Pricing */
+#cake-pricing {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-family: "Noto Serif JP", serif;
+}
+
+.pricing {
+  font-family: "Noto Serif JP", serif;
+  padding-bottom: 30px;
+}
+
+.price {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+  background: #333;
+  color: pink;
+  padding-bottom: 20px;
+}
+
+.price h3 {
+  padding-bottom: 20px;
+}
+
+.price-list {
+  padding-top: 50px;
+}
+
 /* Carousel */
 #middle {
   position: relative;
