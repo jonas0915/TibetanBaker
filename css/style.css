@@ -14,6 +14,7 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 li {
@@ -161,7 +162,7 @@ h3 {
 
 .grid .item {
   border: 1px #ccc solid;
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
   height: 400px;
   align-items: center;
   text-align: center;
@@ -202,8 +203,13 @@ h3 {
 #cake-pricing {
   align-items: center;
   text-align: center;
-  display: flex;
   font-family: "Noto Serif JP", serif;
+}
+
+#cake-pricing li {
+  background: #333;
+  height: 200px;
+  align-items: center;
 }
 
 .pricing {
@@ -213,10 +219,8 @@ h3 {
 
 .price {
   display: grid;
+  grid-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  text-align: center;
-  background: #333;
   color: pink;
   padding-bottom: 20px;
 }
@@ -224,10 +228,6 @@ h3 {
 .price p {
   padding-bottom: 20px;
   font-size: 25px;
-}
-
-.price-list {
-  padding-top: 50px;
 }
 
 /* Carousel */
