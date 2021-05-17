@@ -68,6 +68,11 @@
     padding: 20px;
   }
 
+  .price p {
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+
   .demo {
     opacity: 0.6;
     width: 30px;

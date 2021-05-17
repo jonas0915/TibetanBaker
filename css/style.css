@@ -221,8 +221,9 @@ h3 {
   padding-bottom: 20px;
 }
 
-.price h3 {
+.price p {
   padding-bottom: 20px;
+  font-size: 25px;
 }
 
 .price-list {
