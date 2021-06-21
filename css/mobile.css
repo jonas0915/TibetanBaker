@@ -61,6 +61,11 @@
     position: relative;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
+  }
+
+  .mob-nav {
+    padding-left: 30%;
   }
 
   .grid {
