@@ -45,6 +45,15 @@
     align-items: center;
     margin: auto;
   }
+
+  .price-custom {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    color: pink;
+    padding-bottom: 20px;
+    margin-top: 50;
+  }
 }
 
 @media (max-width: 500px) {
@@ -58,7 +67,20 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .cake-images {
+  #custom-cake {
+    padding: 300px;
+  }
+
+  #custom-cakez h4 {
+    position: relative;
+    background-color: #333;
+    color: pink;
+    width: 300px;
+    height: 130px;
+    padding-top: 20px;
+  }
+
+  #custom-cake .cake-images {
     height: 300px;
     width: 300px;
     align-items: center;
@@ -75,19 +97,12 @@
     padding-top: 0px;
   }
 
-  #main-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    align-items: center;
-  }
-
   #main-footer2 {
     background: #333;
     color: #fff;
     text-align: center;
     align-items: center;
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100%;

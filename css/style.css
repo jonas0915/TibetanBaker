@@ -154,7 +154,7 @@ h3 {
 /* About  */
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 2fr);
   grid-gap: 1rem;
   box-shadow: black 2px;
   align-items: center;
@@ -212,6 +212,22 @@ h3 {
   align-items: center;
 }
 
+#custom-cakez {
+  align-items: center;
+  text-align: center;
+}
+
+#custom-cakez h4 {
+  display: inline-block;
+  position: relative;
+  background-color: #333;
+  color: pink;
+  width: 500px;
+  height: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .pricing {
   font-family: "Noto Serif JP", serif;
   padding-bottom: 30px;
@@ -225,12 +241,21 @@ h3 {
   padding-bottom: 20px;
 }
 
+.price .v-cake {
+  padding-bottom: 2px;
+}
+
 .price p {
   padding-bottom: 20px;
   font-size: 25px;
 }
 
 /* Carousel */
+/* .slide-show {
+  width: 800px;
+  padding-bottom: 20px;
+} */
+
 #middle {
   position: relative;
   align-items: center;
@@ -264,13 +289,6 @@ h3 {
   color: pink;
   background-color: #333;
   padding-top: 8px;
-}
-
-#main-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  align-items: center;
 }
 
 #main-footer2 {
