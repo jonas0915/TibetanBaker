@@ -58,6 +58,7 @@
 
 @media (max-width: 500px) {
   .navbar ul li a {
+    position: relative;
     align-items: center;
     justify-content: space-between;
   }
@@ -72,9 +73,9 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  #custom-cake {
+  /* #custom-cake {
     padding: 300px;
-  }
+  } */
 
   #custom-cakez h4 {
     position: relative;
