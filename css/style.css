@@ -422,3 +422,13 @@ h3 {
   width: 500px;
   align-items: center;
 }
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  background: #333;
+  border: none;
+  border-radius: 5px;
+}
